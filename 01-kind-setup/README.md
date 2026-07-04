@@ -240,3 +240,21 @@ kind delete cluster --name devops-lab
 - Understood namespaces and system Pods
 - Verified Kubernetes networking and storage components
 - Learned that Kind runs Kubernetes nodes as Docker containers
+
+
+## Optional: Create a kubectl Alias
+
+To save typing, create an alias for `kubectl`:
+
+```bash
+echo "alias k='kubectl'" >> ~/.zshrc
+source ~/.zshrc
+```
+
+Usage:
+
+```bash
+k get nodes
+k get pods -A
+k describe pod nginx-pod
+```
