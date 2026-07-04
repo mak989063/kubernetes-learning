@@ -55,5 +55,5 @@ kubectl delete pod nginx-pod
 - Logs and debugging
 - Port forwarding
 - Pod lifecycle
-- Why Pods are not self-healing 
+- Why Pods are not self-healing ??
 - A Pod by itself has no controller. If you delete it, it is gone forever. This leads to Module 03: We will discuss there.
