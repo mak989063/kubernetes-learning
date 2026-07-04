@@ -47,7 +47,7 @@ http://localhost:8080
 kubectl delete pod nginx-pod
 ```
 
-## Key Learnings
+## Key Learning Points
 
 - Declarative Pod creation
 - Pod scheduling
@@ -55,5 +55,15 @@ kubectl delete pod nginx-pod
 - Logs and debugging
 - Port forwarding
 - Pod lifecycle
-- Why Pods are not self-healing ??
-- A Pod by itself has no controller. If you delete it, it is gone forever. This leads to Module 03: We will discuss there.
+- Why Pods are not self-healing?
+
+## Key Takeaways
+
+- A Pod is the smallest deployable unit in Kubernetes.
+- Pods can be created using imperative (`kubectl run`) or declarative (YAML) approaches.
+- `kubectl describe`, `logs`, `exec`, and `port-forward` are essential debugging commands.
+- The Kubernetes Scheduler decides which node runs a Pod.
+- A standalone Pod is **not self-healing**.
+
+> **Important:**  
+> A standalone Pod is not self-healing. If you delete it, Kubernetes does not recreate it because no controller manages its desired state. Self-healing is introduced by higher-level controllers such as ReplicaSets and Deployments.
