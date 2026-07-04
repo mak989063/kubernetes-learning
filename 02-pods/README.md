@@ -46,7 +46,7 @@ http://localhost:8080
 ```bash
 kubectl delete pod nginx-pod
 ```
-
+---
 ## Pod Lifecycle
 
 ```text
@@ -108,6 +108,7 @@ kubectl apply -f nginx-pod.yaml
 ```
 Recommended for production because everything is defined in code, version-controlled, and reproducible.
 
+---
 ## Key Learning Points
 
 - Declarative Pod creation
@@ -117,7 +118,7 @@ Recommended for production because everything is defined in code, version-contro
 - Port forwarding
 - Pod lifecycle
 - Why Pods are not self-healing?
-
+---
 ## Key Takeaways
 
 - A Pod is the smallest deployable unit in Kubernetes.
