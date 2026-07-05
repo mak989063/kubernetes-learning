@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+
+metadata:
+  name: app-config
+
+data:
+  ENV: "development"
+  APP_NAME: "kubernetes-learning"
+  LOG_LEVEL: "debug"
